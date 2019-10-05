@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Home Expenditure</string>
+    <!--String for rupees symbol-->
+    <string name="indian_rupee">\u20B9</string>
+
+    <string name="total_expenditure">Total expenditure: \u20B9</string>
+</resources>

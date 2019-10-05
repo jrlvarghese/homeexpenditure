@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTransactionsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/date_editor_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_alignParentTop="true"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:text="DATE"/>
+        <LinearLayout
+            android:id="@+id/layout_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/date_edit_tv"
+            android:padding="8dp">
+            <EditText
+                android:id="@+id/edit_comments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:inputType="textCapWords"
+                android:textSize="16sp"
+                android:hint="Spend for "/>
+
+            <EditText
+                android:id="@+id/edit_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Amount"
+                android:textSize="16sp"
+                android:inputType="numberDecimal"/>
+
+            <Spinner
+                android:id="@+id/edit_name_spinner"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="4dp"
+                android:spinnerMode="dropdown">
+            </Spinner>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/trans_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_a"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:text="Save transactions"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@+id/trans_save_button"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_blue_light">
+
+        </View>
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:padding="24dp"
+            android:layout_below="@+id/trans_save_button"
+            android:layout_marginTop="24dp"
+            android:hint="Name"/>
+        <Button
+            android:id="@+id/save_name_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_name"
+            android:layout_alignParentRight="true"
+            android:text="Save name" />
+
+    </RelativeLayout>
+</ScrollView>
